@@ -1,13 +1,14 @@
 import junit.HelloWorld;
-import org.junit.Before;
-import org.junit.Test;
+import org.junit.jupiter.api.BeforeAll;
+import org.junit.jupiter.api.Test;
 
-import static junit.framework.TestCase.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
 
 public class TestHelloWorld {
     private HelloWorld h;
 
-    @Before
+    @BeforeAll
     public void setUp() throws Exception
     {
         h = new HelloWorld();
